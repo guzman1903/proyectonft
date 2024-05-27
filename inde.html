@@ -4,32 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./inde.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets.nft/mediaqueries.css">
+    <link rel="stylesheet" href="./assets.nft/animaciones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+     crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <title>MIprimerproyectoNft</title>
 </head>
 <body>
     <header>
         <img src="./assets.nft/img/logo.png" alt="logotipo" class="logo"/>
         <nav class="navbar">
+            <label for="menu-toggle" class="menu-label">
+                <img src="./assets.nft/img/carrito.png" alt="icono menu" class="menu-icon">
+            </label>
+            <input type="checkbox" id="menu-toggle">
         <ul class="navbar-list">
        <li>
-       <a href="#">home</a>
+       <a href="#hero">home</a>
        <li>
-        <a href="#">Descubreme</a>
+        <a href="#discover">Descubre</a>
         <li>
-         <a href="#">BTC</a>
+         <a href="#products">BTC</a>
      <li>
-          <a href="#">Youtobe</a>
+          <a href="https://www.youtube.com/watch?v=u7PsO4_BKy8">Youtube</a>
           <li>
-          <a href="#">contactenos</a>
+          <a href="#https://www.nucba.com.ar">contactenos</a>
                </li>
             </ul>
-            <img src="./assets.nft/img/carrito.png" alt="carrio" class="cart-icon">
+            <label for="cart-toggle" class="cart-label">
+                <!-- 
+                <img src="./assets.nft/img/carrito.png"
+                 alt="carrio"
+                class="cart-icon">-->>
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            </label>
+            <input type="checkbox" id="cart-toggle" />
+            <div class="cart">
+                <h2>tus nft</h2>
+
+                <div class="cart-item">
+                    <img src="./assets.nft/img/carrito.png" 
+                    alt="un producto">
+
+                <div class="item-info">
+                    <h3 class="item-title">messi</h3>
+                    <p class="item-bid">current bid</p>
+                    <span class="item-price">4.8 eth</span>
+                </div>
+
+                <div class="item-handler">
+                    <span class="quantity-handler dow">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+
+                </div>
+                <div class="cart-item">
+                    <img src="./assets.nft/img/carrito.png" 
+                    alt="un producto">
+
+                <div class="item-info">
+                    <h3 class="item-title">messi</h3>
+                    <p class="item-bid">current bid</p>
+                    <span class="item-price">4.8 eth</span>
+                </div>
+
+                <div class="item-handler">
+                    <span class="quantity-handler dow">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+
+                </div>
+
+                <div class="cart-item">
+                    <img src="./assets.nft/img/carrito.png" 
+                    alt="un producto">
+
+                <div class="item-info">
+                    <h3 class="item-title">messi</h3>
+                    <p class="item-bid">current bid</p>
+                    <span class="item-price">4.8 eth</span>
+                </div>
+
+                <div class="item-handler">
+                    <span class="quantity-handler dow">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+
+                </div>
+
+                <div class="cart-item">
+                    <img src="./assets.nft/img/carrito.png" 
+                    alt="un producto">
+
+                <div class="item-info">
+                    <h3 class="item-title">messi</h3>
+                    <p class="item-bid">current bid</p>
+                    <span class="item-price">4.8 eth</span>
+                </div>
+
+                <div class="item-handler">
+                    <span class="quantity-handler dow">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+
+                </div>
+
+                <div class="cart-item">
+                    <img src="./assets.nft/img/carrito.png" 
+                    alt="un producto">
+
+                <div class="item-info">
+                    <h3 class="item-title">messi</h3>
+                    <p class="item-bid">current bid</p>
+                    <span class="item-price">4.8 eth</span>
+                </div>
+
+                <div class="item-handler">
+                    <span class="quantity-handler dow">-</span>
+                    <span class="item-quantity">1</span>
+                    <span class="quantity-handler up">+</span>
+
+                </div>
+                </div>
+                <span class="divider"></span>
+                <div class="cart-total">
+                    <p>total: </p>
+                    <span>18.3 eth</span>
+                </div>
+                <button class="btn-add">comprar</button>
+            </div>
+
+            <div class="overlay"></div>
+
+
+
+            
         </nav>
     </header>
     <main>
         <section class="hero">
             <div class="hero-info">
-                <h1>Descubre la nueva era Cripto</h1>
+                <h1>Descubre la nueva era <span>Cripto</span></h1>
                 <p>nucba nft es el primer marketplace educativo tecnologico de nft que
                  son elementos digitales epicos que relamente puedes poseer.
                   los elementos digitales eisten desde hace mucho tiempo pero 
@@ -90,9 +206,21 @@
                     </p>
             </div>
         </div>
+        <button class="btn-load"> ver mas</button>
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div>
+            <ul class="footer-lins">
+                <li><a href="terminos de uso"></a></li>
+                <li><a href="trabaja con nosotros"></a></li>
+                <li><a href="soporte"></a></li>
+
+
+            </ul>
+        </div>
+        <p>hecho con amor <span>NUCBACRYPTO</span></p>
+    </footer>
 </body>
 </html>
